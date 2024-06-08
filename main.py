@@ -46,7 +46,6 @@ sys.path.append("/usr/lib/python3.5/site-packages") #trying to 'fix' some proble
 from data.openastromod import zonetab, geoname, importfile, dignities, swiss as ephemeris
 
 #debug
-LOCAL=True
 DEBUG=False
 VERSION='1.1.57'
 
@@ -96,10 +95,10 @@ class openAstroCfg:
         dprint("-------------------------------")
         dprint('  OpenAstro.org '+str(self.version))
         dprint("-------------------------------")
-        self.homedir = os.path.expanduser("~")
+        self.homedir = os.path.join(DATADIR, 'home')
 
         #check for astrodir
-        self.astrodir = os.path.join(self.homedir, '.openastro.org')
+        self.astrodir = os.path.join(self.homedir)
         if os.path.isdir(self.astrodir) == False:
             os.mkdir(self.astrodir)
 

@@ -1,1 +1,3 @@
 data/__pycache__
+data/home/*
+!data/home/README.md
