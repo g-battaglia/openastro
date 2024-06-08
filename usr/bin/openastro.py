@@ -63,7 +63,6 @@ else:
     print("Exiting... can't find data directory")
     sys.exit()
 
-#Translations
 LANGUAGES_LABEL={
             "ar":"الْعَرَبيّة",
             "pt_BR":"Português brasileiro",
@@ -101,8 +100,6 @@ for i in range(len(LANGUAGES)):
     TRANSLATION[LANGUAGES[i]] = 'en'
 
 TRANSLATION["default"] = 'en'
-
-
 #config class
 class openAstroCfg:
     
@@ -280,6 +277,7 @@ class openAstroSqlite:
             self.astrocfg[row['name']]=row['value']
 
         #install language
+        self.setLanguage(self.astrocfg['language'])
         self.lang_label=LANGUAGES_LABEL
 
 
@@ -707,6 +705,9 @@ class openAstroSqlite:
         self.link.commit()
         self.plink.commit()
         self.close()
+
+    def setLanguage(self, lang=None):
+        return
 
     def addHistory(self):
         self.open()
