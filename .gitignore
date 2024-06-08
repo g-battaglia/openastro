@@ -1,4 +1,4 @@
-data/__pycache__
+__pycache__
 data/home/*
 !data/home/README.md
 data/openastromod/__pycache__
