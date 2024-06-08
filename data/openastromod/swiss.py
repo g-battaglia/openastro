@@ -16,16 +16,11 @@
     You should have received a copy of the GNU General Public License
     along with OpenAstro.org.  If not, see <http://www.gnu.org/licenses/>.
 """
-import os.path, sys, datetime, math
-#swiss ephemeris files directory
-swissDir = os.path.join(sys.prefix,'share','swisseph')
-#local swiss ephemeris files directory
-home=os.path.expanduser("~")
-oa=os.path.join(home, '.openastro.org')
-swissLocalDir=os.path.join(oa, 'swiss_ephemeris')
+from pathlib import Path
+import math
 
 #swiss ephemeris path
-ephe_path=swissDir+':'+swissLocalDir
+ephe_path= Path(__file__).parent.parent / "swisseph"
 
 import swisseph as swe
 
@@ -33,7 +28,7 @@ class ephData:
     def __init__(self,year,month,day,hour,geolon,geolat,altitude,planets,zodiac,openastrocfg,houses_override=None):
         #ephemeris path (default "/usr/share/swisseph:/usr/local/share/swisseph")
         print('-----> OK')
-        swe.set_ephe_path(ephe_path)
+        swe.set_ephe_path(ephe_path.as_posix())
         
         #basic location        
         self.jul_day_UT=swe.julday(year,month,day,hour)

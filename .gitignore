@@ -1,3 +1,6 @@
 data/__pycache__
 data/home/*
 !data/home/README.md
+data/openastromod/__pycache__
+data/.DS_Store
+.DS_Store
