@@ -1,0 +1,72 @@
+version = 1
+revision = 3
+requires-python = ">=3.11"
+
+[[package]]
+name = "openastro"
+version = "1.0.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "pygobject" },
+    { name = "pyswisseph" },
+    { name = "pytz" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "pygobject", specifier = ">=3.54.3" },
+    { name = "pyswisseph", specifier = ">=2.10.3.2" },
+    { name = "pytz", specifier = ">=2025.2" },
+]
+
+[[package]]
+name = "pycairo"
+version = "1.28.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/40/d9/412da520de9052b7e80bfc810ec10f5cb3dbfa4aa3e23c2820dc61cdb3d0/pycairo-1.28.0.tar.gz", hash = "sha256:26ec5c6126781eb167089a123919f87baa2740da2cca9098be8b3a6b91cc5fbc", size = 662477, upload-time = "2025-04-14T20:11:08.218Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c9/94/47d75f4eaac865f32e0550ed42869f8b3c4036f8e2b1e6163e9548f4d44f/pycairo-1.28.0-cp311-cp311-win32.whl", hash = "sha256:0fee15f5d72b13ba5fd065860312493dc1bca6ff2dce200ee9d704e11c94e60a", size = 750441, upload-time = "2025-04-14T20:10:48.311Z" },
+    { url = "https://files.pythonhosted.org/packages/aa/02/1169a2917b043998585f9dd0f36da618947fdf9b6cc0e9ff9852aa4d548b/pycairo-1.28.0-cp311-cp311-win_amd64.whl", hash = "sha256:6339979bfec8b58a06476094a9a5c104bd5a99932ddaff16ca0d9203d2f4482c", size = 841536, upload-time = "2025-04-14T20:10:51.112Z" },
+    { url = "https://files.pythonhosted.org/packages/eb/99/13031086fb4d4ea71568d9ce74e03afbb2e18047f1e6b4e8674851f0414f/pycairo-1.28.0-cp311-cp311-win_arm64.whl", hash = "sha256:c6ae15392e28ebfc0b35d8dc05d395d3b6be4bad9ad4caecf0fa12c8e7150225", size = 691895, upload-time = "2025-04-16T19:30:20.724Z" },
+    { url = "https://files.pythonhosted.org/packages/a9/d7/206d7945aac5c6c889e7fea4011410d1311455a1d8dfce66106d8d700b7f/pycairo-1.28.0-cp312-cp312-win32.whl", hash = "sha256:c00cfbb7f30eb7ca1d48886712932e2d91e8835a8496f4e423878296ceba573e", size = 750594, upload-time = "2025-04-14T20:10:53.72Z" },
+    { url = "https://files.pythonhosted.org/packages/2e/ba/259fc9a4d3afdad1e5b9db52b9d8a5df67f70dd787167185e8ec8a1af007/pycairo-1.28.0-cp312-cp312-win_amd64.whl", hash = "sha256:d50d190f5033992b55050b9f337ee42a45c3568445d5e5d7987bab96c278d8a6", size = 841767, upload-time = "2025-04-14T20:10:56.711Z" },
+    { url = "https://files.pythonhosted.org/packages/c0/08/aa0903612ea0e8686ad6af58d4fb9cbab8ee0b0831201cddf7abd578d045/pycairo-1.28.0-cp312-cp312-win_arm64.whl", hash = "sha256:957e0340ee1c279d197d4f7cfa96f6d8b48e453eec711fca999748d752468ff4", size = 691687, upload-time = "2025-04-16T19:30:23.729Z" },
+    { url = "https://files.pythonhosted.org/packages/59/a7/c3e5ed55781dfe1b31eb4a2482aeae707671f3d36b0ea53a1722f4a3dfe9/pycairo-1.28.0-cp313-cp313-win32.whl", hash = "sha256:d13352429d8a08a1cb3607767d23d2fb32e4c4f9faa642155383980ec1478c24", size = 750594, upload-time = "2025-04-14T20:10:59.284Z" },
+    { url = "https://files.pythonhosted.org/packages/8b/1c/ebadd290748aff3b6bc35431114d41e7a42f40a4b988c2aaf2dfed5d8156/pycairo-1.28.0-cp313-cp313-win_amd64.whl", hash = "sha256:082aef6b3a9dcc328fa648d38ed6b0a31c863e903ead57dd184b2e5f86790140", size = 841774, upload-time = "2025-04-14T20:11:01.79Z" },
+    { url = "https://files.pythonhosted.org/packages/3e/ce/a3f5f1946613cd8a4654322b878c59f273c6e9b01dfadadd3f609070e0b9/pycairo-1.28.0-cp313-cp313-win_arm64.whl", hash = "sha256:026afd53b75291917a7412d9fe46dcfbaa0c028febd46ff1132d44a53ac2c8b6", size = 691675, upload-time = "2025-04-16T19:30:26.565Z" },
+    { url = "https://files.pythonhosted.org/packages/96/1b/1f5da2b2e44b33a5b269ff28af710b0a7903001d9cf8a40d00fc944a5092/pycairo-1.28.0-cp314-cp314-win32.whl", hash = "sha256:d0ab30585f536101ad6f09052fc3895e2a437ba57531ea07223d0e076248025d", size = 766699, upload-time = "2025-07-24T06:36:07.267Z" },
+    { url = "https://files.pythonhosted.org/packages/c9/91/1d5f18bd3ed469b1de8f83bfbf8bd67d23439f075151b66740fd35356190/pycairo-1.28.0-cp314-cp314-win_amd64.whl", hash = "sha256:94f2ed204999ab95a0671a0fa948ffbb9f3d6fb8731fe787917f6d022d9c1c0f", size = 868725, upload-time = "2025-07-24T06:36:09.597Z" },
+]
+
+[[package]]
+name = "pygobject"
+version = "3.54.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pycairo" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/cf/71/90c0650485f40a684f54f09fd31aa03158af7f72129fd2089b67b4daa6d0/pygobject-3.54.3.tar.gz", hash = "sha256:a8da09134a0f7d56491cf2412145e35aa74e91d760e8f337096a1cda0b92bae7", size = 1272609, upload-time = "2025-09-28T16:16:05.794Z" }
+
+[[package]]
+name = "pyswisseph"
+version = "2.10.3.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/66/a6/db70d67a00dda42ebd033538c086879328f4c17f670eafe8aca2f11abfef/pyswisseph-2.10.3.2.tar.gz", hash = "sha256:c54c305e83dbd5d2b71e58d8a69d8ee41de24c4d3328ce09e2af860a3537624d", size = 6940913, upload-time = "2023-06-04T17:05:53.293Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/3c/ae/33731d803062c513f144d1ef4f20b679cf42f3c8806f6591d78f58bab4b2/pyswisseph-2.10.3.2-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:b83407a030d653ead529c07bebac72acf55426140b1b4dbf89026a1369806df6", size = 793996, upload-time = "2023-06-04T17:04:47.043Z" },
+    { url = "https://files.pythonhosted.org/packages/17/a3/2f8872cea3a7fe305db7ae2315cddd9c1b6c6ae5c51e75eff31bc44924a5/pyswisseph-2.10.3.2-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:458ee64b79fe593c68fa636ba00db81d131e5a6bd028685493bfb64b879e2d72", size = 1767751, upload-time = "2023-06-04T17:04:49.216Z" },
+    { url = "https://files.pythonhosted.org/packages/76/fa/b284fe0900f00a030754727e2c190fe16597da39ff7b6faf744cab4e3c74/pyswisseph-2.10.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:e00d7e08aeafe00938603bc118874b6ca7871c5aaa55aafca8fa2c6d76aff812", size = 1818961, upload-time = "2023-06-04T17:04:50.799Z" },
+    { url = "https://files.pythonhosted.org/packages/d0/e4/364678f730c52f35396d5cfc622621c18c2c5b41435253b7cd6c1befa3fc/pyswisseph-2.10.3.2-cp311-cp311-musllinux_1_1_i686.whl", hash = "sha256:b574cc5a39ea73f8916663254c8ac15c56f09735d68e9cba1e6f958a49bb45bd", size = 2307855, upload-time = "2023-06-04T17:04:52.645Z" },
+    { url = "https://files.pythonhosted.org/packages/5f/49/0561232481fa7c2fd3eb75e101bd6f749153d40b7baefa0fc1c5d8a74511/pyswisseph-2.10.3.2-cp311-cp311-musllinux_1_1_x86_64.whl", hash = "sha256:e5cf469ef1ebbf4d426eea862b45c8ec00ab827247f69758d038924e5efb3a9d", size = 2329849, upload-time = "2023-06-04T17:04:54.099Z" },
+    { url = "https://files.pythonhosted.org/packages/08/20/0862ac62cb4ca4db18021ddf9fa20d7c4180144c1438ded6ccaa6b1d1021/pyswisseph-2.10.3.2-cp311-cp311-win32.whl", hash = "sha256:0b2208aa72e4a9265ffa6281180684bbce78becfede209ce3d1623736aade184", size = 874571, upload-time = "2023-06-04T17:04:55.596Z" },
+    { url = "https://files.pythonhosted.org/packages/f8/52/fe2e12caae15650f0fbc585bb3f740cd5ac6f7662d85e915ae38d456b7db/pyswisseph-2.10.3.2-cp311-cp311-win_amd64.whl", hash = "sha256:2b4a24f7954e1456ecbd3bb091b7c2a8a2e9838ff56e0d8af0f9e897fa84eb25", size = 1015881, upload-time = "2023-06-04T17:04:57.843Z" },
+]
+
+[[package]]
+name = "pytz"
+version = "2025.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f8/bf/abbd3cdfb8fbc7fb3d4d38d320f2441b1e7cbe29be4f23797b4a2b5d8aac/pytz-2025.2.tar.gz", hash = "sha256:360b9e3dbb49a209c21ad61809c7fb453643e048b38924c765813546746e81c3", size = 320884, upload-time = "2025-03-25T02:25:00.538Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/81/c4/34e93fe5f5429d7570ec1fa436f1986fb1f00c3e0f43a589fe2bbcd22c3f/pytz-2025.2-py2.py3-none-any.whl", hash = "sha256:5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00", size = 509225, upload-time = "2025-03-25T02:24:58.468Z" },
+]

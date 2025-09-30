@@ -1,0 +1,11 @@
+[project]
+name = "openastro"
+version = "1.0.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pygobject>=3.54.3",
+    "pyswisseph>=2.10.3.2",
+    "pytz>=2025.2",
+]
