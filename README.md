@@ -8,7 +8,13 @@ Highlights
 -   Swiss Ephemeris data bundled under `data/swisseph/`
 -   Data and temporary files stored under `data/home/`
 
-Status: legacy/unmaintained. PRs welcomed on a best‑effort basis.
+## Run program
+
+Once dependencies are installed (see below), run:
+
+```bash
+uv run python main.py
+```
 
 ## Quick start (macOS, using uv)
 
