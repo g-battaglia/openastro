@@ -214,7 +214,7 @@ uv run python main.py --dbcheck
 
 ## License
 
-OpenAstro is licensed under the GPLv3 (see headers in source files). This fork includes minor changes only to aid running on current systems.
+OpenAstro is licensed under the AGPLv3 (see headers in source files). This fork includes minor changes only to aid running on current systems.
 
 ## Copyright
 
